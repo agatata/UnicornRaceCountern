@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <dimen name="XLPadding">16dp</dimen>
+        <dimen name="LPadding">8dp</dimen>
+        <dimen name="OuterMargin">24dp</dimen>
+        <dimen name="InnerMargin">18dp</dimen>
+</resources>

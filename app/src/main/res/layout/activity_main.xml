@@ -1,0 +1,161 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:gravity="center"
+    android:padding="@dimen/XLPadding"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textColor="@color/textColor" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/unicornwhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/BodyText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/XLPadding"
+                    android:text="@string/unicorn_a"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/unicorn_a_score"
+                    style="@style/CounterText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/LPadding"
+                    android:text="@string/score"
+                    android:textColor="@color/textColor" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/OuterMargin"
+                    android:layout_marginRight="@dimen/InnerMargin"
+                    android:layout_marginTop="@dimen/LPadding"
+                    android:onClick="addOneForA"
+                    android:text="@string/fluffy_obstacle" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/OuterMargin"
+                    android:layout_marginRight="@dimen/InnerMargin"
+                    android:layout_marginTop="8dp"
+                    android:onClick="addFiveForA"
+                    android:text="@string/rainbow_slide" />
+
+                <Button
+                    android:id="@+id/TenForA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/OuterMargin"
+                    android:layout_marginRight="@dimen/InnerMargin"
+                    android:layout_marginTop="@dimen/LPadding"
+                    android:background="@drawable/mybutton"
+                    android:onClick="addTenForA"
+                    android:text="@string/style_bonus" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/XLPadding"
+                    android:text="@string/unicorn_b"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/unicorn_b_score"
+                    style="@style/CounterText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/LPadding"
+                    android:text="@string/zero"
+                    android:textColor="@color/textColor"
+                    android:textSize="64sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/InnerMargin"
+                    android:layout_marginRight="@dimen/OuterMargin"
+                    android:layout_marginTop="@dimen/LPadding"
+                    android:onClick="addOneForB"
+                    android:text="@string/fluffy_obstacle" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/InnerMargin"
+                    android:layout_marginRight="@dimen/OuterMargin"
+                    android:layout_marginTop="@dimen/LPadding"
+                    android:onClick="addFiveForB"
+                    android:text="@string/rainbow_slide" />
+
+                <Button
+                    android:id="@+id/TenForB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/InnerMargin"
+                    android:layout_marginRight="@dimen/OuterMargin"
+                    android:layout_marginTop="@dimen/LPadding"
+                    android:onClick="addTenForB"
+                    android:text="@string/style_bonus" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/LPadding"
+            android:onClick="Reset"
+            android:padding="@dimen/XLPadding"
+            android:text="@string/reset" />
+    </RelativeLayout>
+</ScrollView>

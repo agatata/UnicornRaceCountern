@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Unicorn Race Counter</string>
+    <string name="rainbow_slide">rainbow slide</string>
+    <string name="style_bonus">style bonus</string>
+    <string name="fluffy_obstacle">fluffy obstacle</string>
+    <string name="zero">0</string>
+    <string name="unicorn_a">Unicorn A</string>
+    <string name="title">Let\'s start magic!</string>
+    <string name="score">0</string>
+    <string name="unicorn_b">Unicorn B</string>
+    <string name="reset">Reset</string>
+</resources>
